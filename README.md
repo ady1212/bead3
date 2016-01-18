@@ -68,7 +68,7 @@ II. Végpontok
 
   I. Oldalvázlatok, Designterv
         
-      - Főoldal : /docs/images/home.png
+      - ![fooldal](docs/images/főoldal.png)
       - Tárgyak Listája : /docs/images/list.png
       - Új tárgy : 
       - Tárgy megtekintése :
