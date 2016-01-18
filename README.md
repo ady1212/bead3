@@ -34,13 +34,15 @@ II. Nem funkcionális követelmények:
 
 I. Használati esetek:
   A felhasználó megtekintheti a már felvett tárgyak listáját. Ha az nem üres, akkor már tudja a lista egyes elemeit szerkeszteni és   törölni, hozzászólásokat fűzni hozzájuk. Új tárgyak felvételére is van lehetőségünk.
-  /docs/images/hasznalati_eset_diagram.png
+![Használatieset diagram](docs/images/hasznalati_eset_diagram.png)
 
 III. Egy folyamat kifejtése
 
   1. Megjelenik a főoldalt
   2. Menüből a Tárgyak gombbal eljutunk a listához
   3. Egy új tárgy felvétele
+
+  ![Folyamatábra](docs/images/folyamatabra.png)
 
 Tervezés
 
@@ -68,22 +70,22 @@ II. Végpontok
 
   I. Oldalvázlatok, Designterv
         
-      - ![fooldal](docs/images/főoldal.png)
-      - Tárgyak Listája : /docs/images/list.png
-      - Új tárgy : 
-      - Tárgy megtekintése :
-      - Új hozzászólás : 
+      - ![Home](docs/images/főoldal.png)
+      - ![List](docs/images/lista.png)
+      - ![New](docs/images/tárgyfelvétele.png)
+      - ![View](docs/images/megtekintés.png)
+      - ![Comment](docs/images/hozzászólás.png)
+      - ![Edit](docs/images/Szerkesztés.png)
         
 2.3 Osztálymodell
     
     I. Adatmodell
    
-        /docs/images/adatmodell.png
-   
+    ![Adatmodell](docs/images/adatmodel.png)   
+    
     II. Adatbázisterv
    
-        /docs/images/adatbazis.png
-   
+    ![Adatbázisterv](docs/images/adatmodel_database.png)   
     
 Implementáció
 
