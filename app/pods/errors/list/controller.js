@@ -7,16 +7,15 @@ export default Ember.Controller.extend({
                 'error', 
                 Object.assign(
                     {
-                        status: 'new',
-                        //date: Date.now().toLocaleString(),
-                        location: 'labor',
-                        description: 'rossz'
+                        targynev: formData.targynev,
+                        kurzuskod: formData.kurzuskod,
+                        idopont: formData.idopont
                     }, 
                     formData
                 )
             );
             error.save();
-            this.$('.modal').modal('hide');
+            $('.modal').modal('hide');
             //this.transitionToRoute('errors.list');
         }
     }

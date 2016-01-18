@@ -10,20 +10,24 @@ export default Ember.Component.extend({
             }
             
             this.get('onSave')({
-                location: this.$('#helyszin').val(),
-                description: this.$('#leiras').val(),
+                targynev: this.$('#targynev').val(),
+                kurzuskod: this.$('#kurzuskod').val(),
+                idopont: this.$('#idopont').val(),
             });
         }
     },
     
     validate() {
-        var location = this.$('#helyszin').val();
-        var description = this.$('#leiras').val();
+        var targynev = this.$('#targynev').val();
+        var kurzuskod = this.$('#kurzuskod').val();
+        var idopont = this.$('#idopont').val();
         
-        this.set('errors.location', location === '' ? 'Név kötelező' : '');
-        this.set('errors.description', description === '' ? 'Leírás kötelező' : '');
+        this.set('errors.targynev', targynev === '' ? 'Tárgynév kötelező' : '');
+        this.set('errors.kurzuskod', kurzuskod === '' ? 'Kurzuskód kötelező' : '');
+        this.set('errors.idopont', idopont === '' ? 'Időpont kötelező' : '');
         
-        return this.get('errors.location') === '' &&
-               this.get('errors.description') === '';
+        return this.get('errors.targynev') === '' &&
+               this.get('errors.kurzuskod') === '' &&
+               this.get('errors.idopont') === '';
     }
 });

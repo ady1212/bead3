@@ -2,20 +2,21 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
     actions: {
-        newError(formData) {
+        newComment(formData) {
             console.log(formData);
-            var error = this.store.createRecord(
-                'error', 
+            var error = this.get('model');
+            var comment = this.store.createRecord(
+                'comment', 
                 Object.assign(
                     {
-                        targynev: formData.targynev,
-                        kurzuskod: formData.kurzuskod,
-                        idopont: formData.idopont
+                        nev: formData.nev,
+                        uzenet: formData.uzenet,
+                        error: error,
                     }, 
                     formData
                 )
             );
-            error.save();
+            comment.save();
             this.transitionToRoute('errors.list');
         }
     }

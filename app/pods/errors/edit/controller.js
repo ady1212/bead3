@@ -6,10 +6,15 @@ export default Ember.Controller.extend({
             // console.log(formData);
             let error = this.get('model');
             console.log(error);
-            error.setProperties(formData);
-            return error.save().then(() => {
-                this.transitionToRoute('errors.list');
-            });
+            error.setProperties(
+                {
+                    targynev: formData.targynev,
+                    kurzuskod:formData.kurzuskod,
+                    idopont: formData.idopont
+                }
+            );
+            error.save();
+            this.transitionToRoute('errors.list');
         }
     }
 });

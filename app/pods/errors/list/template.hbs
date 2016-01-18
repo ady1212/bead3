@@ -6,18 +6,12 @@
 {{/each}}
 
 <div class="page-header">
-    <h1>Bejelentett hibáim</h1>
+    <h1>Felvett tárgyaim</h1>
 </div>
 
 {{error-list errors=model}}
 
 <p>
-    <button {{action "showModal" "new-error-modal" "errors.list"}} class="btn btn-default">Új hiba felvitele</button>
-    {{!--{{link-to "Új hiba felvitele" "errors.new" class="btn btn-default"}}--}}
+    <button {{action "showModal" "new-error-modal" "errors.list"}} class="btn btn-default">Új Tárgy felvétele</button>
+   
 </p>
-{{!--<a href="/errors/new" class="btn btn-default">Új hiba felvitele</a>--}}
-
-
-{{!--{{#modal-dialog title="My modal #1"}}--}}
-{{!--  This is the content of my modal #1--}}
-{{!--{{/modal-dialog}}--}}
